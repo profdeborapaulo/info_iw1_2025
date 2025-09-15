@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0e68c; 
+}
+
+body {
+  background-color: #121212; 
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  background-color: #1f1f1f;
+  color: #f0e68c;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+
+}
+
+nav a {
+  color: #f0e68c;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #ffd700;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #ffd700;
+  padding-bottom: 5px;
+}
+
+.produtos-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.produto {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 10px;
+  width: calc(20% - 16px);
+  box-shadow: 0 2px 10px #f0e68c44;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #f0e68c;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px #ffd700cc;
+}
+
+.produto img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.produto h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #ffd700;
+
+}
+
+.produto p {
+  font-weight: 700;
+  color: #f0e68c;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  color: #888;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+}
+
+.banner h2 {
+  color: #ffd700;
+}
+
+.banner p {
+  color: #f0e68c;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #f0e68c;
+  font-weight: 600;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #1f1f1f;
+  color: #f0e68c;
+  box-shadow: inset 0 0 6px #f0e68c44;
+}
+
+form input::placeholder, form textarea::placeholder {
+  color: #bfb76b;
+}
+
+form button {
+  background: #ffd700;
+  border: none;
+  padding: 10px 20px;
+  color: #202020;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #f0e68c;
+}
