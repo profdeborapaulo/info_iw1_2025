@@ -1,0 +1,99 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
+  <diagram name="Página-1" id="hOSNDC1u6EL3lI8b1nTe">
+    <mxGraphModel dx="1301" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="F-L90N5hzjTrEM3rhYHD-2" target="F-L90N5hzjTrEM3rhYHD-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-2" value="Rebelde" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="370" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-5" value="Sistema de Acesso ao website" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="145" width="1080" height="465" as="geometry">
+            <mxRectangle x="140" y="145" width="140" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-3" value="Acessar a página inicial" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="F-L90N5hzjTrEM3rhYHD-5">
+          <mxGeometry x="30" y="215" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-41" value="Inserir nome completo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="F-L90N5hzjTrEM3rhYHD-5">
+          <mxGeometry x="280" y="65" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-40" value="Fazer login" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="F-L90N5hzjTrEM3rhYHD-5">
+          <mxGeometry x="280" y="215" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-42" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="F-L90N5hzjTrEM3rhYHD-5" source="F-L90N5hzjTrEM3rhYHD-40" target="F-L90N5hzjTrEM3rhYHD-41">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="430" y="375" as="sourcePoint" />
+            <mxPoint x="590" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-43" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="F-L90N5hzjTrEM3rhYHD-42">
+          <mxGeometry x="-0.0435" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-44" value="Inserir número de ID da Rebeldia" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="F-L90N5hzjTrEM3rhYHD-5">
+          <mxGeometry x="280" y="355" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-45" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="F-L90N5hzjTrEM3rhYHD-5" source="F-L90N5hzjTrEM3rhYHD-40" target="F-L90N5hzjTrEM3rhYHD-44">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="310" y="435" as="sourcePoint" />
+            <mxPoint x="470" y="435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-46" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="F-L90N5hzjTrEM3rhYHD-45">
+          <mxGeometry x="-0.2176" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-48" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="F-L90N5hzjTrEM3rhYHD-5" source="F-L90N5hzjTrEM3rhYHD-3" target="F-L90N5hzjTrEM3rhYHD-40">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="120" y="335" as="sourcePoint" />
+            <mxPoint x="280" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-49" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="F-L90N5hzjTrEM3rhYHD-48">
+          <mxGeometry x="-0.3626" y="2" relative="1" as="geometry">
+            <mxPoint x="18" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-50" value="Acessar a página &quot;Sobre a Rebeldia&quot;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="F-L90N5hzjTrEM3rhYHD-5">
+          <mxGeometry x="580" y="107.5" width="90" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-52" value="Acessar a página &quot;Métodos de Entrega&quot;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="F-L90N5hzjTrEM3rhYHD-5">
+          <mxGeometry x="580" y="230" width="90" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-55" value="Acessar a página &quot;Produtos/Utensílios&quot;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="F-L90N5hzjTrEM3rhYHD-5">
+          <mxGeometry x="580" y="347.5" width="90" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-57" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="F-L90N5hzjTrEM3rhYHD-5" source="F-L90N5hzjTrEM3rhYHD-40" target="F-L90N5hzjTrEM3rhYHD-50">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="420" y="205" as="sourcePoint" />
+            <mxPoint x="580" y="205" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-58" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="F-L90N5hzjTrEM3rhYHD-5" source="F-L90N5hzjTrEM3rhYHD-40" target="F-L90N5hzjTrEM3rhYHD-52">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="440" y="325" as="sourcePoint" />
+            <mxPoint x="600" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-59" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="F-L90N5hzjTrEM3rhYHD-5" source="F-L90N5hzjTrEM3rhYHD-40" target="F-L90N5hzjTrEM3rhYHD-55">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="430" y="295" as="sourcePoint" />
+            <mxPoint x="590" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-38" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1240" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F-L90N5hzjTrEM3rhYHD-39" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1230" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

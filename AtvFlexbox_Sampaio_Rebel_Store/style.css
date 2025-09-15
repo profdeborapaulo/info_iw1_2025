@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+body{
+    background-color: rgb(27, 16, 7);
+    color: azure;
+    font-family: "Mozilla Headline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.container{
+    background-color: chocolate;
+    height: 200px;
+    display: flex;
+    flex-flow: row;
+}
+
+.art_title{
+    color: red;
+    font-size: 200%;
+}
+
+.itens{
+    background-color: rgb(49, 39, 9);
+    color: azure;
+    padding: 20px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30%;
+}
+
+a{
+    color: aliceblue
+}
+
+a:hover{
+    color: aquamarine;
+    font-size: 20px;
+}
+
+.prod{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: auto;
+}
+
+.prod_weap{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: auto;
+}
+
+.food{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.weapons{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.grav_gun{
+    color: brown;
+}
+
+.weapons_line2{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.weapons_line3{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
