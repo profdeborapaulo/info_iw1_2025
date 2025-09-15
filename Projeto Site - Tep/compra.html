@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compra - TEP</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background-color: #fffdf7;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Container principal */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .compra-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 2px 4px 12px rgba(0,0,0,0.15);
+      max-width: 600px;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      position: relative;
+      text-align: center;
+    }
+
+    /* Botão de fechar (X) */
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #ed4444;
+      color: #fff;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .close-btn:hover {
+      background: #c72f2f;
+    }
+
+    .compra-container h1 {
+      color: #ed8900;
+    }
+
+    .compra-container img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+    }
+
+    .compra-container p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: #ed8900;
+      color: #fff;
+      padding: 20px;
+      margin-top: auto;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .suporte-btn {
+      background: #fff;
+      color: #ed8900;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .suporte-btn:hover {
+      background: #ffd06b;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="compra-container">
+      <button class="close-btn" onclick="window.location.href='produtos.html'">X</button>
+      <h1>Finalizar Compra</h1>
+      <img src="/img/pagamento.webp" alt="Formas de pagamento">
+      <p>Escolha sua forma de pagamento preferida e conclua sua compra com segurança.</p>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2025 TEP - Todos os direitos reservados | contato@tep.com.br</span>
+    <a href="suporte.html"><button class="suporte-btn">Suporte</button></a>
+  </footer>
+
+</body>
+</html>

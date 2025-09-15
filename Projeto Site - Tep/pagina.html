@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEP - Seu Pet em Primeiro Lugar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background-color: #fffdf7;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #F9A826, #ed8900);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 30px;
+      background: rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(0,0,0,0.4);
+      transform: scale(1.05);
+    }
+
+    /* Banner */
+    .banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      background: url('/img/cachorro.png') center/cover no-repeat;
+      border-radius: 0 0 25px 25px;
+    }
+
+    .banner-text {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.6);
+      padding: 15px 25px;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .banner-text strong {
+      color: #ffd06b;
+    }
+
+    /* Produtos */
+    .produtos {
+      padding: 60px 20px;
+      background: #fff8ec;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .produtos h2 {
+      font-size: 32px;
+      color: #ed8900;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 2px 4px 12px rgba(0,0,0,0.15);
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 220px;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+
+    .card h3 {
+      color: #ed8900;
+      margin-bottom: 10px;
+    }
+
+    .card button {
+      background: #F9A826;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .card button:hover {
+      background: #ed8900;
+    }
+
+    /* Feedbacks */
+    .feedbacks {
+      padding: 60px 20px;
+      background: #ffbb4e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .feedbacks h2 {
+      font-size: 30px;
+      color: #333;
+    }
+
+    .feedback {
+      max-width: 600px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+      font-style: italic;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      background: #ed8900;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .suporte-btn {
+      background: #fff;
+      color: #ed8900;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .suporte-btn:hover {
+      background: #ffd06b;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .banner-text { font-size: 20px; }
+      nav { flex-wrap: wrap; gap: 10px; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="/img/logo.png" class="logo" alt="Logo TEP">
+    <nav>
+      <a href="produtos.html">Produtos</a>
+      <a href="feedbacks.html">Feedbacks</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="banner-text">
+      TEP: O melhor para o seu pet com <strong>amor e cuidado</strong>!
+    </div>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <h2>Nossos Produtos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="/img/Ra1.webp" alt="Rações">
+        <h3>Rações</h3>
+        <a href="produtos.html"><button>Comprar</button></a>
+      </div>
+      <div class="card">
+        <img src="/img/B1.jpg" alt="Brinquedos">
+        <h3>Brinquedos</h3>
+        <a href="produtos.html"><button>Comprar</button></a>
+      </div>
+      <div class="card">
+        <img src="/img/Re1.webp" alt="Remédios">
+        <h3>Remédios</h3>
+        <a href="produtos.html"><button>Comprar</button></a>
+      </div>
+      <div class="card">
+        <img src="/img/Ac1.jpg" alt="Acessórios">
+        <h3>Acessórios</h3>
+        <a href="produtos.html"><button>Comprar</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="feedbacks" class="feedbacks">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="feedback">“A TEP facilitou muito minha vida, encontrei tudo o que precisava para meu cachorro em um só lugar!” – Maria</div>
+    <div class="feedback">“Entrega rápida e produtos de qualidade, recomendo para qualquer dono de pet.” – João</div>
+  </section>
+
+  <footer>
+    <span>© 2025 TEP - Todos os direitos reservados | contato@tep.com.br</span>
+    <a href="suporte.html"><button class="suporte-btn">Suporte</button></a>
+  </footer>
+
+</body>
+</html>
