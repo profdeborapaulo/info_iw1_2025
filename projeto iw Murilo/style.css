@@ -1,0 +1,135 @@
+header {
+  background-color: #222; /* Cor de fundo */
+  padding: 15px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Sombra inferior */
+}
+
+
+h1{
+  text-align: center;
+  color: #ffd700;
+}
+
+/* Estilo para o menu de navegação */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Espaçamento entre os links */
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para os links */
+.menu a {
+  color: #fff; /* Cor do texto */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efeito hover nos links */
+.menu a:hover {
+  background-color: #555; /* Cor de destaque ao passar o mouse */
+  color: #ffd700; /* Cor dourada ao passar o mouse */
+}
+
+body {
+  background-color: #111;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza as linhas */
+  gap: 20px;
+  width: 100%;
+}
+
+/* Cada linha com três ofertas */
+.linha {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Para melhor responsividade */
+}
+
+/* Estilo para as ofertas individuais */
+.Oferta {
+  width: 200px;
+  min-height: 280px;
+  border: 2px solid rgb(96, 139, 168);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Bordas específicas para grupos */
+.Oferta1, .Oferta2, .Oferta3 {
+  border-color: #ff0000;
+}
+.Oferta4, .Oferta5, .Oferta6 {
+  border-color: #001f4d;
+}
+
+.Oferta7, .Oferta8, .Oferta9 {
+  border-color: #107C10;
+}
+
+/* Hover efeito nas ofertas */
+.Oferta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Imagem */
+.Oferta img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Título */
+.Oferta h4 {
+  text-align: center;
+  margin: 5px 0 0;
+  color: white;
+  font-size: 14px;
+}
+
+/* Preço */
+.preco {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+/* Preço azul e verde */
+.preco-azul { color: #00a2ff; }
+.preco-verde { color: #00ff00; }
+
+/* Botão */
+.btn-comprar {
+  margin: 5px auto 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-comprar:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,57 @@
+header {
+  background-color: #222; /* Cor de fundo */
+  padding: 15px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Sombra inferior */
+}
+
+body {
+  background-color: #111;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Estilo para o menu de navegação */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Espaçamento entre os links */
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para os links */
+.menu a {
+  color: #fff; /* Cor do texto */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efeito hover nos links */
+.menu a:hover {
+  background-color: #555; /* Cor de destaque ao passar o mouse */
+  color: #ffd700; /* Cor dourada ao passar o mouse */
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    color: #ffd700;
+}
+h2{
+    padding-left: 40px;
+    color: #ffd700;
+}
+h3{
+    padding-left: 40px;
+    color: #ffd700;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

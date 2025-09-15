@@ -1,0 +1,112 @@
+body {
+  background-color: #111;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #222;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #555;
+  color: #ffd700;
+}
+
+/* Container principal */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Título do produto */
+.titulo-produto {
+  text-align: center;
+  color: #ffd700;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Imagem do produto */
+.imagem-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.imagem-inicial {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid rgb(15, 0, 15);
+  border-radius: 8px;
+}
+
+/* Informações do produto */
+.informacoes {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.informacoes h2 {
+  text-align: center;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.informacoes ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.informacoes li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Seção de compra */
+.comprar-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.comprar-btn {
+  background-color: #ffd700;
+  color: #222;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.comprar-btn:hover {
+  background-color: #e6c200;
+  transform: scale(1.05);
+}
