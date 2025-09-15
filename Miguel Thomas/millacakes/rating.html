@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliações - MillaCakes</title>
+    <link rel="shortcut icon" href="icons/favicons/avaliacoes.png" type="image/png">
+</head>
+<body>
+    <header>
+        <p class="titulo"><img class="title-icon" src="icons/cake.png" > MillaCakes</p>
+        <div class="nav">
+            <a href="about.html"><img class="icon" src="icons/group.png">Sobre nós</a>
+            <a href="bolos.html"><img class="icon" src="icons/cake.png">Nossos Bolos</a>
+            <a href="index.html"><img class="icon" src="icons/home.png">Home</a>
+        </div>
+    </header>
+    <div class="espaco-header"></div>
+    
+    <div class="slogan">
+        <p class="titulo">Avaliações</p>
+        <p class="slogan-txt">Relatos de pessoas que compraram nossos bolos!</p>
+    </div>
+
+    <hr>
+    <section class="ratings">
+        <div class="slider-btn">
+            <img src="icons/left.png">
+        </div>
+        <div class="rating item1">
+            <h2 class="person-name">Cleberson</h2>
+            <p><b>Bolo de destaque:</b> Bolo de Laranja Gourmet</p>
+            <p class="stars">★★★★★</p>
+            <p class="rating-desc">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptate nam beatae voluptatem? Voluptates officia temporibus fugit odio quas esse maxime porro expedita sint, dolor saepe illo consequuntur reiciendis incidunt."</p>
+            <img class="rate-cake" src="images/bolos/bolo_3.png">
+        </div>
+
+        <div class="rating item2">
+            <h2 class="person-name">Ana Julia</h2>
+            <p><b>Bolo de destaque:</b> Bolo de Fubá</p>
+            <p class="stars">★★★★☆</p>
+            <p class="rating-desc">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptate nam beatae voluptatem? Voluptates officia temporibus fugit odio quas esse maxime porro expedita sint, dolor saepe illo consequuntur reiciendis incidunt."</p>
+            <img class="rate-cake" src="images/bolos/bolo_7.png">
+        </div>
+
+        <div class="rating item3">
+            <h2 class="person-name">Gabriel</h2>
+            <p><b>Bolo de destaque:</b> Bolo Formigueiro</p>
+            <p class="stars">★★★★★</p>
+            <p class="rating-desc">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptate nam beatae voluptatem? Voluptates officia temporibus fugit odio quas esse maxime porro expedita sint, dolor saepe illo consequuntur reiciendis incidunt."</p>
+            <img class="rate-cake" src="images/bolos/bolo_5.png">
+        </div>
+        <div class="rating item4">
+            <h2 class="person-name">Eduardo</h2>
+            <p><b>Bolo de destaque:</b> Bolo de Chocolate</p>
+            <p class="stars">★★★☆☆</p>
+            <p class="rating-desc">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptate nam beatae voluptatem? Voluptates officia temporibus fugit odio quas esse maxime porro expedita sint, dolor saepe illo consequuntur reiciendis incidunt."</p>
+            <img class="rate-cake" src="images/bolos/bolo_6.png">
+        </div>
+                <div class="slider-btn">
+            <img src="icons/right.png">
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="formulario">
+        <form>
+        <fieldset>
+            <legend style="text-align: center;"><h1>Faça sua Avaliação!</h1></legend>
+            <p class="form-sect">
+            <label for="nome">Insira seu nome:</label><br>
+            <input type="text" name="nome" id="nome"/>
+
+            </p>
+
+            <p class="form-sect">
+            <label for="cake">Bolo de preferência:</label><br>
+            <select id="cake" name="bolo">
+                <option value="cake_1">Nenhum em específico</option>
+                <option value="cake_1">Bolo de Laranja Fofinho</option>
+                <option value="cake_2">Bolo de Laranja Integral</option>
+                <option value="cake_3">Bolo de Laranja Gourmet</option>
+                <option value="cake_4">Bolo de Laranja Sequinho</option>
+                <option value="cake_5">Bolo Formigueiro</option>
+                <option value="cake_6">Bolo de Chocolate</option>
+                <option value="cake_7">Bolo de Fubá</option>
+                <option value="cake_8">Bolo de Goiabada</option>
+            </select>
+            </p>
+            
+            <p class="form-sect" aria-required="true">
+            <span>
+                Em quantas estrelas você classifica nossos serviços? (Entrega, Qualidade dos Bolos, etc)
+            </span>
+            <br><br>
+            <input type="radio" name="star" id="1star"/>
+            <label for="1star">1</label>
+            <input type="radio" name="star" id="2star"/>
+            <label for="2star">2</label>
+            <input type="radio" name="star" id="3star"/>
+            <label for="3star">3</label>
+            <input type="radio" name="star" id="4star"/>
+            <label for="4star">4</label>
+            <input type="radio" name="star" id="4star"/>
+            <label for="4star">5</label>
+            </p>
+
+            <p class="form-sect">
+                <label for="desc">Escreva sua opinião com detalhes:</label><br><br>
+                <textarea name="desc" id="desc" rows="10" cols="56" placeholder="Escreva aqui!"></textarea>
+            </p>
+
+            <input type="submit" class="submit" value="Enviar Avaliação">
+        </fieldset>
+        </form>
+    </section>
+    <div class="msg-afeto">
+            <div class="afeto-txt">
+                <span class="titulo" style="margin-left: 0px;">MillaCakes, bolos feitos com amor e carinho, para você!</span>
+            </div>
+            <img src="icons/coracao-cursivo.png" class="coracao">
+        </div>
+</body>
+
+</html>

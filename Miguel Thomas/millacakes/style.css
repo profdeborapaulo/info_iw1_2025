@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Exo 2", sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+.espaco-header{
+    height: 100px;
+}
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    background-color: rgb(233, 175, 185);
+    color: rgb(121, 31, 65);
+    box-shadow: rgba(34, 36, 37, 0.253) 0px 8px 24px;
+    width: 100%;
+    top: 0px;
+    z-index: 100;
+
+}
+
+header a {
+    color: rgb(121, 31, 65);
+    background-color: rgb(245, 186, 186);
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: ease-in-out, .5s;
+}
+
+header a:hover{
+    color: rgb(158, 43, 87);
+    background-color: rgb(252, 203, 203);
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.titulo{
+    margin-left: 30px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    font-size: 22pt;
+}
+
+.title-icon{
+    width: 35px;
+}
+
+.icon{
+    position: relative;
+    margin: 5px;
+    top: 10px;
+    width: 25px;
+}
+
+.nav {
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 30px;
+    height: 40px;
+}
+
+hr {
+    background-color: rgb(158, 43, 87);
+    height: 5px;
+    width: 75%;
+    border-radius: 15px;
+}
+
+/* Corpo */
+
+.slogan{
+    text-align: center;
+    justify-self: center;
+}
+.slogan-txt{
+    font-size: 16pt;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.banner-art{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    background-color: #ffe4d1;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+.banner {
+    max-width: 1000px;
+    min-width: 200px;
+    width: min-content;
+    border-radius: 15px;
+    box-shadow: -1px -1px 17px 3px #ff7b0009;
+
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    
+}
+
+.banner:hover{
+    box-shadow: -1px -1px 17px 3px #ff7b00;
+    transform: scale(1.02, 1.02);
+}
+
+/* Produtos / Nossos Bolos */
+
+.promo{
+    background-color: #ffe4d1;
+    padding: 10px;
+}
+
+.cordefundo{
+    background-color: rgb(255, 242, 242);
+    padding: 10px;
+}
+
+.categoria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    padding: 10px;
+    
+
+}
+
+.cake-showcase{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    background-color: #f1f1f1;
+}
+
+.botao-redirecionador{
+    color: white;
+    background-color: rgb(121, 31, 65);
+    border-radius: 50px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: ease-in-out, .5s;
+    width:550px;
+
+}
+
+.botao-redirecionador:hover{
+    color: white;
+    background-color: rgb(190, 57, 108);
+    border-radius: 50px;
+    padding: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: ease-in-out, .5s;
+    width:550px;
+
+}
+
+.text-pos{
+    position: relative;
+    justify-self: center;
+    bottom: 10px;
+}
+
+.comprar{
+    color:white;
+    font-weight: 600;
+    font-family: "Exo 2", sans-serif;
+
+    background-color: rgb(158, 43, 87);
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+
+    width: 100px;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+}
+
+.comprar:hover{
+    color:white;
+    font-weight: 600;
+    font-family: "Exo 2", sans-serif;
+
+    background-color: rgb(190, 57, 108);
+    transform: scale(1.02, 1.02);
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+
+    width: 100px;
+}
+
+
+.produto{
+    display: flex;
+    flex-direction: row;
+
+    background-color: rgb(233, 175, 185);
+    border-radius: 15px;
+    width: 700px;
+    margin: 10px;
+    padding: 15px;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+}
+
+.produto:hover{
+    display: flex;
+    flex-direction: row;
+
+    background-color: rgb(233, 175, 185);
+    transform: scale(1.02, 1.02);
+    border-radius: 15px;
+    width: 700px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.prod-icon{
+    width:270px;
+    border-radius: 15px;
+}
+
+
+.prod-rate{
+    color: rgb(209, 143, 0);
+    font-size: 15pt;
+}
+
+.desconto{
+    color: #999999;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.preco{
+    color: #2b7924;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.description{
+    background-color: rgb(252, 203, 203);
+    color: rgb(121, 31, 65);
+    border-radius: 15px;
+    margin-left: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Sobre nós */
+
+.tudo {
+    width: 100%;
+    height: auto;
+}
+
+.abt-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    
+    background-color: rgb(233, 175, 185);
+    box-shadow: 0px 5px 5px 2px #00000050;
+    border-radius: 10px;
+
+    padding: 25px;
+    margin: 20px;
+    width: 50%;
+}
+
+.abt-icon{
+    width: 250px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 5px 3px #00000044;
+}
+
+.abt-text{
+    background-color: rgb(252, 203, 203);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 14pt;
+}
+
+.msg-afeto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    padding-top: 100px;
+    width: 75%;
+}
+
+.coracao{
+    position: relative;
+    bottom: 55px;
+    width: 15%;
+
+}
+
+/* Avaliações */
+
+.ratings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    background-color: rgb(255, 242, 242);
+    color: rgb(121, 31, 65);
+    padding: 20px;
+    width: 100%;
+}
+
+.rate-cake{
+    width: 350px;
+    border-radius: 15px;
+}
+
+.rating {
+    background-color: rgb(252, 203, 203);
+    padding: 15px;
+    border-radius: 15px;
+    width: 350px;
+    margin: 13px;
+}
+
+.person-name{
+    font-size: 19pt;
+}
+
+.stars{
+    color: rgb(209, 143, 0);
+    font-size: 15pt;
+}
+
+.slider-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    background-color: rgb(158, 43, 87);
+    color: white;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+
+    transition: .2s ease-in-out;
+}
+
+.slider-btn:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    background-color: rgb(190, 57, 108);
+    color: white;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+/* Formulário */
+
+section.formulario{
+    background-color: rgb(255, 242, 242);
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+textarea{
+    border-radius: 5px;
+    resize: none;
+}
+
+form{
+    background-color: rgb(248, 189, 199);
+    border-radius: 10px;
+    border: rgb(187, 70, 115), 2px, solid;
+    width: 500px;
+}
+.form-sect{
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border: rgb(194, 108, 141), 2px, solid;
+    border-radius: 10px;
+}
+
+fieldset{
+    border: none;
+}
+
+.submit{
+    width: 470px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(158, 43, 87);
+    color: white;
+    font-weight: 600;
+}
+.submit:hover{
+    width: 470px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(187, 70, 115);
+    color: white;
+    font-weight: 600;
+    transition: .2s ease-in-out;
+}
