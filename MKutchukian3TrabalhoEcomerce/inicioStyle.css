@@ -1,0 +1,30 @@
+body {
+  background-color: #e0e1dd;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  align-items: center;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  background-color: #0d1b2a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: e0e1dd;
+  text-align: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu{
+  font-size: 30px;  
+  font-weight: bold;
+  margin-left: 5%;
+  color: #eef4ff;
+}

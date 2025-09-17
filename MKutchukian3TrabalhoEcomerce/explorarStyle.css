@@ -1,0 +1,79 @@
+body {
+  background-color: #415a77;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  background-color: #0d1b2a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #eef4ff;
+  text-align: center;
+  align-items: center;
+}
+
+/* Page é o fundo Branco que contém as linhas */
+#page { 
+  margin: 10px;
+  background-color: #eef4ff;
+  padding: 10px;
+  margin-top: 115px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+/* Linha, pra ter itens horizontais */
+#linha {
+display: flex;
+ align-items: center;
+ width: 90%;
+ margin: auto;
+}
+
+#product {
+  display: block ;
+  background-color: #778da9;
+  margin: 7px;
+  align-items: center ;
+  height: 70%;
+  width: 24.5%;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#product_img {
+  margin: 10%;
+  height: 70%;
+  width: 80%;
+  border-radius: 30px;
+}
+
+#comprar {
+  background-color: #1b263b;
+  color: #eef4ff;
+  padding: 8px;
+  border-radius: 10%;
+  font-weight: bold;  
+}
+
+#titulo {
+  font-family: 'Courier New', Courier, monospace;
+  align-self: center;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.menu{
+  font-size: 40px;  
+  font-weight: bold;
+  margin-left: 70px;
+  color: #eef4ff;
+}
