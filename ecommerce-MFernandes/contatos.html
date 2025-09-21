@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="página de contato para vendas">
+    <meta name="author" content="Miguel Fernandes Silva">
+    <meta name="keyowords" content="contato, acesso, vendas">
+    <link rel="icon" type="image/x-icon" href="/Imagens/Logotipo Branco.png">
+    <title> Instrumania | Contatos </title>
+    <style>
+        /* Fontes de texto */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mozilla+Headline:wght@200..700&family=Satisfy&display=swap');
+        
+        body{
+            background: url(/Imagens/atendimento.jpg) no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        /* Header */
+        .header{
+            width: 100%;
+            height: 200px;
+            display: flex;
+        }
+        .logo{
+            width: 250px;
+            height: 125px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        /* Links */
+        .links{
+            left: 53%;
+            position: absolute;
+            transform: translateX(-50%);
+            top: 6%;
+        }
+        .links ul{
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+        .links a{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 25px;
+            font-family: "Mozilla Headline", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            transition: color 0.3s;
+        }
+        .links a:hover{font-size: 30px; font-weight: bold;}
+
+        /* Redes Sociais */
+        #container{
+            background-color: rgb(249, 250, 252);
+            margin-top: 10%;
+            height: 100%;
+            padding-top: 10px;
+            border: 2px solid black;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            padding: 20px;
+            padding-top: 15px;
+        }
+        h1, h2{
+            text-align: center;
+            font-family: "Satisfy", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        h1{font-size: 40px;}
+        h2{font-size: 30px; margin-top: 5%;}
+        p, label{
+            text-align: center;
+            text-align: center;
+            font-family: "Mozilla Headline", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 20px;
+        }
+        label{margin-right: 1%;}
+        .redes{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5%;
+        }
+        .redes img{
+            width: 400px;
+            height: 400px;
+        }
+        .instagram span{
+            background-clip: text;
+            color: transparent;            
+            background-image: linear-gradient(to right, #0242e7, #ff294d);
+        }
+        .whatsapp span{color:#189d10;}
+        .facebook span{color: #1877F2;}
+        /* Contato */
+        input{
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            width: 80%;
+            background-color: transparent;
+        }
+        textarea{
+            border: 1px solid rgb(0, 0, 0, 0.3);
+            border-radius: 10px;
+            width: 99%;
+            height: 200px;
+            background-color: transparent;
+            font: 40px;
+            box-shadow: inset black;
+            padding: 0.5%;
+            font-size: 20px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .enviar{
+            height: 50px;
+            width: 200px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: "Mozilla Headline", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: bold;
+            background-color: #94baec;
+            color: #202020;
+            margin-top: 1%;
+        }
+        /* Footer */
+        .footer {
+            width: 100%;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.9);
+            margin-top: 100px;
+            display: flex;
+            color: white;
+        }
+        .footer img{
+            height: 85px;
+            width: 250px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .vendas{
+            margin-left: 200px;
+            width: 350px;
+        }
+        .vendas h3{
+            font-size: 30px;
+            font-family: "Baskervville", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+        .vendas li{list-style: none; font-size: 20px;}
+        .vendas a{
+            text-decoration: none;
+            color: white;
+            line-height: 1.8;
+        }
+        .vendas a:hover{font-weight: bold;}
+        .pags{margin-left: 150px;}
+        .pags h3{
+            font-size: 30px;
+            font-family: "Baskervville", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            }
+        .pags a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+        .pags a:hover{font-weight: bold;}
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="header">
+            <div class="logo"><a href="index.html" target="_blank"><img class="logo" src="Imagens/Logo Preta.png"></a></div>
+        <div class="links">
+            <ul>
+                <li><a href="index.html" target="_self"> Início </a></li>
+                <li><a href="sobre_nos.html" target="_self"> Sobre nós </a></li>
+                <li><a href="musica.html" target="_self"> Aprenda música </a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div id="container">
+    <article>
+        <h1> Contatos </h1>
+        <p> Entre em contato por nossas redes sociais! </p>
+        <section>
+            <div class="redes"> <!-- Instagram -->
+                <div class="instagram">
+                    <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://icones.pro/wp-content/uploads/2021/02/instagram-icone-noir.png" 
+                    alt="Instagram" title="Instagram" class="midia"></a>
+                    <p> Instagram: <span> @instrumania_ofc </span></p>
+                </div>
+                <div class="whatsapp"> <!-- Whatsapp -->
+                    <a href="https://web.whatsapp.com" target="_blank">
+                    <img src="https://images.freeimages.com/fic/images/icons/2779/simple_icons/4096/whatsapp_4096_black.png" 
+                    alt="Whatsapp" title="Whatsapp" class="midia"></a>
+                    <p> Whatsapp: <span> (11) 94756-3130 </span></p>
+                </div>
+                <div class="facebook"> <!-- Facebook -->
+                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
+                    <img src="https://images.icon-icons.com/509/PNG/512/Facebook_icon-icons.com_49947.png" 
+                    alt="Facebook" title="Facebook" class="midia"></a>
+                    <p> Facebook: <span> @instrumania_ofc </span></p>
+                </div>
+                <div class="twiter">
+                    <a href="https://x.com" target="_blank"> <!-- Twitter / X-->
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-twitter-x-icon-svg-download-png-7740647.png?f=webp" 
+                    alt="X/Twitter" title="X/Twitter" class="midia"></a>
+                    <p> Twitter / X: <span> @instrumania_ofc </span></p>
+                </div>
+            </div>
+            <hr>
+            <h2> Outras formas de contato: </h2>
+            <form class="dados">
+                <label for="usuario"> Insira o seu nome: </label>
+                <input type="text" class="usuario" id="usuario" name="usuario"> <br> <br>
+                <label for="email"> Insira o seu Email: </label>
+                <input type="email" class="email" id="email" name="email">
+            <br> <br> <br>
+                <label for="email"> Envie-nos uma mensagem: </label> <br><br>
+                <textarea></textarea>
+                <div class="button">
+                    <input type="submit" id="enviar" name="enviar" class="enviar">
+                </div>
+            </form>
+        </section>
+    </div>
+    </article>
+</main>
+<footer>
+    <div class="footer">
+        <img src="/Imagens/Logo Branca.png" alt="Instrumania" title="Instrumania">
+        <div class="vendas">
+            <h3> Nossas vendas </h3>
+                <ul>
+                    <li><a href="cordas.html" target="_self"> Instrumentos de Corda </a></li>
+                    <li><a href="percursao.html" target="_self"> Instrumentos de Percursão </a></li>
+                    <li><a href="equipamentos.html" target="_self"> Equipamentos para Instrumentos </a></li>
+                </ul>
+        </div>
+        <div class="pags">
+            <h3> Confira também: </h3>
+                <a href="index.html" target="_self"> Início </a> <br>
+                <a href="sobre_nos.html" target="_self"> Sobre Nós </a> <br>
+                <a href="contatos.html" target="_self"> Contatos </a> <br>
+                <a href="musica.html" target="_self"> Aprenda Música </a> <br>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

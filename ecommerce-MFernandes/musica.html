@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site de recomendação de curso">
+    <meta name="author" content="Miguel Fernandes Silva">
+    <meta name="keyowords" content="aula, recomendação, musica">
+    <link rel="icon" type="image/x-icon" href="/Imagens/Logotipo Branco.png">
+    <title> Instrumania | Aprenda Música </title>
+    <style>
+        /* Fontes de texto */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mozilla+Headline:wght@200..700&family=Satisfy&display=swap');
+        
+        body{
+            background: url(/Imagens/aulademusica.jpg) no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        /* Header */
+        .header{
+            width: 100%;
+            height: 200px;
+            display: flex;
+        }
+        .logo{
+            width: 250px;
+            height: 125px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        /* Links */
+        .links{
+            left: 53%;
+            position: absolute;
+            transform: translateX(-50%);
+            top: 6%;
+        }
+        .links ul{
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+        .links a{
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-family: "Mozilla Headline", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            transition: color 0.3s;
+        }
+        .links a:hover{font-size: 30px; font-weight: bold;}
+
+        /* Principal */
+        #container{
+            background-color: rgb(249, 250, 252);
+            margin-top: 10%;
+            height: 100%;
+            padding-top: 10px;
+            border: 2px solid black;
+            padding: 20px;
+            padding-top: 15px;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-family: "Satisfy", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        h2{
+            text-align: center;
+            font-family: "Mozilla Headline", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+        }
+        /* Conteudo */
+        p, a{
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            text-align: justify;
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+        }
+        #container a{font-style: italic;}
+        #container a:hover{font-style: normal;}
+        /* Footer */
+        .footer {
+            width: 100%;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.95);
+            margin-top: 100px;
+            display: flex;
+            color: white;
+        }
+        .footer img{
+            height: 85px;
+            width: 250px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .vendas{
+            margin-left: 200px;
+            width: 350px;
+        }
+        .vendas h3{
+            font-size: 30px;
+            font-family: "Baskervville", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+        .vendas li{list-style: none; font-size: 20px;}
+        .vendas a{
+            text-decoration: none;
+            color: white;
+            line-height: 1.8;
+        }
+        .vendas a:hover{font-weight: bold;}
+        .pags{margin-left: 150px;}
+        .pags h3{
+            font-size: 30px;
+            font-family: "Baskervville", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            }
+        .pags a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+        .pags a:hover{font-weight: bold;}
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="header">
+            <div class="logo"><a href="index.html" target="_blank"><img class="logo" src="Imagens/Logo Branca.png"></a></div>
+        <div class="links">
+            <ul>
+                <li><a href="index.html" target="_self"> Início </a></li>
+                <li><a href="sobre_nos.html" target="_self"> Sobre Nós </a></li>
+                <li><a href="contatos.html" target="_self"> Contatos </a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div id="container">
+    <article>
+        <h1> Aprenda Música </h1>
+        <br> <br>
+        <section class="música">
+            <p> Muitas pessoas tem o desejo de começar a tocar músicas, porém não fazem ideia de como começar ou onde estudar. Pensando nisso, a
+                equipe Instrumania separou alguns sites e vídeos como recomendação para estudo de teoria músical, algo que é extremamente importante
+                para quem quer tocar. Confira:
+            </p>
+            <br>
+        <h2> Plataformas de Cursos: </h2>
+        <ul>
+            <li><a href="https://www.musictheory.net"> musictheory.net </a> </li>
+            <li><a href="https://teoria.com"> teoria.com </a> </li>
+            <li><a href="https://www.musicca.com"> musicca.com </a> </li>
+            <li><a href="https://www.descomplicandoamusica.com"> descomplicando a musica </a> </li>
+            <li><a href="https://kultivi.com/cursos/negocios/teoria-musical?utm_source=google&utm_medium=cpc&utm_campaign=&gad_source=1&gad_campaignid=22804421468&gclid=CjwKCAjwobnGBhBNEiwAu2mpFDq0VptP3mpai5ywfOCkctwKKbqxrE40Hio-N572jwcAedPa1AJ7ARoCkP4QAvD_BwE">
+                 Kultivi | Curso de Teoria Musical </a> </li>
+        </ul>
+        <br>
+        <h2> Plataformas de videoaulas: </h2>
+        <ul>
+            <li><a href="https://www.youtube.com/c/AprendaMúsica"> Aprenda Música - Youtube </a> </li>
+            <li><a href="https://www.youtube.com/@Berklee"> Berklee Music </a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL9LXrs9vCXK56qtyK4qcqwHrbf0em_81r"> Yale - Youtube </a> </li>
+            <li><a href="https://www.youtube.com/@EduardoFeldberg"> Eduardo Feldberg - Youtube</a> </li>
+            <li><a href="https://www.coursera.org/learn/teoria-musical"> Coursera.com </a> </li>
+        </ul>
+        <br>
+        <h2> Livros: </h2>
+        <ul>
+            <li><a href="https://www.amazon.com.br/Teoria-Música-Bohumil-Med/dp/8570920393/ref=asc_df_8570920393?mcid=aced433e19313f509c0dd51a666e263e&tag=googleshopp00-20&linkCode=df0&hvadid=709883381917&hvpos=&hvnetw=g&hvrand=15013944265567925504&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9074235&hvtargid=pla-387685953010&psc=1&language=pt_BR&gad_source=1"> 
+                Teoria da Música - Bohumil Med </a> </li>
+            <li><a href="https://www.amazon.com.br/Harmonia-Improvisação-1-Almir-Chediak/dp/857407263X/ref=sr_1_1?adgrpid=117580363145&dib=eyJ2IjoiMSJ9.OM8l0cofAdMD5_KfgCa6pjpEZcq4zcpZlWxsVZlhDqzU17RhzNnJdhd-g5YtGABXl_A6lwAAUc73RgPGKNHoyZ0ygc4eGggcVqeuNkUSOfkQTgAVNOk7d0Shg-S-2w4E.ndWEMkWRvs2m-O4REK55BavM1JeDhz4bio8Soa2jaqM&dib_tag=se&hvadid=595790792085&hvdev=c&hvlocphy=1031616&hvnetw=g&hvqmt=e&hvrand=13911443433619391376&hvtargid=kwd-2419789769705&hydadcr=13247_13418560&keywords=harmonia+e+improvisação+de+almir+chediak&mcid=1efc53b87d523d7084f2caef216845e9&qid=1758426008&sr=8-1&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d"> 
+                Harmonia e Improvisação (vol. I) - Almir Chediak </a></li>
+            <li><a href="https://www.amazon.com.br/Harmonia-Improvisação-Músicas-Harmonizadas-Analisadas/dp/8574072648/ref=sr_1_2?adgrpid=117580363145&dib=eyJ2IjoiMSJ9.OM8l0cofAdMD5_KfgCa6pjpEZcq4zcpZlWxsVZlhDqzU17RhzNnJdhd-g5YtGABXl_A6lwAAUc73RgPGKNHoyZ0ygc4eGggcVqeuNkUSOfkQTgAVNOk7d0Shg-S-2w4E.ndWEMkWRvs2m-O4REK55BavM1JeDhz4bio8Soa2jaqM&dib_tag=se&hvadid=595790792085&hvdev=c&hvlocphy=1031616&hvnetw=g&hvqmt=e&hvrand=13911443433619391376&hvtargid=kwd-2419789769705&hydadcr=13247_13418560&keywords=harmonia+e+improvisação+de+almir+chediak&mcid=1efc53b87d523d7084f2caef216845e9&qid=1758426008&sr=8-2&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9"> 
+                Harmonia e Improvisação (vol. II) - Almir Chediak </a></li>
+            <li><a href="https://www.amazon.com.br/Teórico-Prático-Ensino-Ditado-Musical/dp/8599477218/ref=asc_df_8599477218?mcid=70a1f29d6f653177a3b9e7c5ef8dda8f&tag=googleshopp00-20&linkCode=df0&hvadid=709883381917&hvpos=&hvnetw=g&hvrand=16725865744525147464&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031616&hvtargid=pla-834066695194&psc=1&language=pt_BR&gad_source=1"> 
+                Pozoli Guia Teórico e Prático </a> </li>
+            <li><a href="https://www.amazon.com.br/Exercícios-leitura-para-guitarristas-violonistas/dp/8574074268"> 
+                Exercícios de Leitura para Guitarristas e Violonistas - Nelson Faria </a> </li>
+            <li><a href="https://www.amazon.com.br/Harmonia-Arnold-Schoenberg/dp/8539301741/ref=sr_1_1?adgrpid=119638304345&dib=eyJ2IjoiMSJ9.Yo1ZS3n1OIlgLXQdeDdBlKE6tADC7D5LATS35ozH8NIr53eKYgNSyGDsHx-3vP6PO2Nij_-F52v3MpTVb3ZcoOmQ73PRmhJ10LzAE64E-XmIanMRuyvJ0PbNiilP5aTjeLqzTmvIk20PyCInertupz7gzEfqcuaibLLffbKWP4CEIMUJl9t7Qt3wf-q8URnI3k58rBTmopqzvH13i1Zrl7JLtfbEYVeVQZM4RDBPb0QN4txbtKxkT8Kz1KPXrC17R7j2ffQ66YhkEDcMO-TueX555ANuti7t6rb8se2zyUY.eSNCkXmEXIRnJEcg77WQjqVM3f_vybal8ME0hije4vg&dib_tag=se&hvadid=595836044311&hvdev=c&hvlocphy=1031616&hvnetw=g&hvqmt=e&hvrand=1264165136043321685&hvtargid=kwd-387577056942&hydadcr=5707_13215429&keywords=harmonia+arnold+schoenberg&mcid=2ad3e85b01d43d2facf5a178e8a0e6cf&qid=1758426131&sr=8-1&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d">
+                Harmonia - Arnold Schoenberg </a> </li>
+        </ul>
+</main>
+<footer>
+    <div class="footer">
+        <img src="/Imagens/Logo Branca.png" alt="Instrumania" title="Instrumania">
+        <div class="vendas">
+            <h3> Nossas vendas </h3>
+                <ul>
+                    <li><a href="cordas.html" target="_self"> Instrumentos de Corda </a></li>
+                    <li><a href="percursao.html" target="_self"> Instrumentos de Percursão </a></li>
+                    <li><a href="equipamentos.html" target="_self"> Equipamentos para Instrumentos </a></li>
+                </ul>
+        </div>
+        <div class="pags">
+            <h3> Confira também: </h3>
+                <a href="index.html" target="_self"> Início </a> <br>
+                <a href="sobre_nos.html" target="_self"> Sobre Nós </a> <br>
+                <a href="contatos.html" target="_self"> Contatos </a> <br>
+                <a href="#.aprendamusica" target="_self"> Aprenda Música </a> <br>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

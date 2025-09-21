@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site de compras de instrumentos músicais">
+    <meta name="author" content="Miguel Fernandes Silva">
+    <meta name="keyowords" content="música, instrumentos, compras">
+    <link rel="icon" type="image/x-icon" href="/Imagens/Logotipo Branco.png">
+    <title> Instrumania </title>
+    <style>
+        /* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&family=Satisfy&display=swap');
+
+body{
+    background: url(/Imagens/Background\ Instrumania.png) no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* Nav */
+.header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+.logo{
+    width: 200px;
+    height: 85px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+/* Links da Nav */
+.links{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+.links li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 15px;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Mozilla Headline", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.links a:hover{font-size: 30px; font-weight: bold;}
+
+/* Redes Sociais */
+.redes{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    top: 10px;
+    gap: 20px;
+}
+.midia{
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    margin-top: 60px;
+    z-index: 2;
+}
+
+/* Introdução */
+.principal{
+    width: 1000px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 0;
+    margin: auto;
+    padding-top: 5px;
+    text-align: center;
+}
+.principal h1{
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 40px;
+}
+.principal h3{
+    font-family: "Baskervville", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+}
+
+/* Botão dropdown */
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.menu {position: relative; display: inline-block;}
+.dropdown{
+    background-color: #4e1e02;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+}
+.instrumentos{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 256px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.instrumentos a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover{border-radius: 0; border-top-left-radius: 20px; border-top-right-radius: 20px}
+.instrumentos a:hover{background-color: #ddd;}
+.menu:hover .instrumentos{display: block;}
+.menu:hover .dropdown{background-color: #250f0c;}
+
+/* Menu de mais vendidos */
+.mais-vendidos{
+    width: 100%;
+    height: 520px;
+    background-color: #BF895A;
+    margin-top: 100px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.mais-vendidos h2{
+    font-size: 40px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+.produtos-vendidos{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.produto{width: 300px;}
+.produto img{
+    width: 100%;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+.produto p{margin: 10px 0px; font-size: 20px;}
+.produto button{
+    background-color: #592F25;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.produto button a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.produto button:hover{background-color: #41221b;}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 100px;
+    display: flex;
+    color: white;
+}
+.footer img{
+    height: 85px;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.vendas{
+    margin-left: 200px;
+    width: 350px;
+}
+.vendas h3{
+    font-size: 30px;
+    font-family: "Baskervville", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.vendas li{list-style: none; font-size: 20px;}
+.vendas a{
+    text-decoration: none;
+    color: white;
+    line-height: 1.8;
+}
+.vendas a:hover{font-weight: bold;}
+.redes-sociais{margin-left: 150px;}
+.redes-sociais h3{
+    font-size: 30px;
+    font-family: "Baskervville", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.redes-sociais img{
+    display: table;
+    width: 30px;
+    height: 30px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header">
+            <img src="/Imagens/Logo branca.png" class="logo">
+            <div class="links">
+                <ul>
+                    <!-- Pags extras -->
+                    <li><a href="sobre_nos.html" target="_self"> Sobre nós </a></li>
+                    <li><a href="contatos.html" target="_self"> Contatos </a></li>
+                    <li><a href="musica.html" target="_self"> Aprenda música </a></li>
+                </ul>
+            </div>
+            <div class="redes">
+                <!-- Redes Sociais Fictíceas -->
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png" 
+                    alt="Instagram" title="Instagram" class="midia"></a>
+                <a href="https://web.whatsapp.com" target="_blank">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/whatsapp-white-icon.png" 
+                    alt="Whatsapp" title="Whatsapp" class="midia"></a>
+                <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
+                    <img src="https://img.icons8.com/ios11/512/FFFFFF/facebook-f.png" 
+                    alt="Facebook" title="Facebook" class="midia"></a>
+                <a href="https://x.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/X_logo_2023_%28white%29.png/250px-X_logo_2023_%28white%29.png" 
+                    alt="X/Twitter" title="X/Twitter" class="midia"></a>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="principal">
+            <h1> Instrumania </h1>
+            <h3> A melhor loja de instrumentos Online! </h3>
+        </div>
+        <div class="button">
+            <div class="menu">
+                <button class="dropdown"> Escolha um tipo de instrumento </button>
+                <div class="instrumentos">
+                    <ul>
+                        <li><a href="cordas.html" target="_self"> Cordas </a></li>
+                        <li><a href="sopro.html" target="_self"> Sopro </a></li>
+                        <li><a href="percursao.html" target="_self"> Percursão </a></li>
+                        <li><a href="equipamentos.html" target="_self"> Equipamentos </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <article>
+            <div class="mais-vendidos">
+                <h2> Mais vendidos </h2>
+                <div class="produtos-vendidos">
+                    <div class="produto">
+                    <img src="https://img.pikbest.com/png-images/20250511/modern-white-electric-guitar-in-3d-isolated-view-with-wooden-neck-and-classic-design_11709027.png!sw800"
+                     alt="Guitarra" title="Guitarra">
+                     <p> Guitarra: Dona da versatilidade  </p>
+                     <button> 
+                        <a href="cordas.html" target="_self"> Comprar </a>
+                    </button>
+                    </div>
+                    <div class="produto">
+                    <img src="https://png.pngtree.com/recommend-works/png-clipart/20250103/ourmid/pngtree-a-black-and-white-grand-piano-with-its-lid-open-png-image_15032163.png"
+                     alt="Piano" title="Piano">
+                     <p> Piano: O mais querido para clássicos </p>
+                     <button> 
+                        <a href="cordas.html" target="_self"> Comprar </a>
+                    </button>
+                    </div>
+                    <div class="produto">
+                    <img src="https://www.pngarts.com/files/4/Violin-PNG-Transparent-Image.png"
+                     alt="Violino" title="Violino">
+                    <p>Violino: Emoção em um instrumento </p>
+                    <button> 
+                        <a href="cordas.html" target="_self"> Comprar </a>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div class="footer">
+            <img src="/Imagens/Logo Branca.png" alt="Instrumania" title="Instrumania">
+            <div class="vendas">
+                <h3> Nossas vendas </h3>
+                <ul>
+                    <li><a href="sopro.html" target="_self"> Instrumentos de Sopro </a></li>
+                    <li><a href="cordas.html" target="_self"> Instrumentos de Corda </a></li>
+                    <li><a href="percursao.html" target="_self"> Instrumentos de Percursão </a></li>
+                    <li><a href="equipamentos.html" target="_self"> Equipamentos para Instrumentos </a></li>
+                </ul>
+            </div>
+            <div class="redes-sociais">
+                <h3> Siga nossas redes sociais </h3>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png" 
+                    class="midia2" alt="Instagram" title="Instagram">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
+                    <img src="https://img.icons8.com/ios11/512/FFFFFF/facebook-f.png" class="midia2" alt="Facebook" title="Facebook">
+                </a>
+                <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/X_logo_2023_%28white%29.png/250px-X_logo_2023_%28white%29.png" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/X_logo_2023_%28white%29.png/250px-X_logo_2023_%28white%29.png"
+                    class="midia2" alt="X/Twitter" title="X/Twitter">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

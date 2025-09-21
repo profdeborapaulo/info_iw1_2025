@@ -1,0 +1,199 @@
+/* Fontes de Texto */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&family=Satisfy&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+/* Header */
+.header{
+    width: 100%;
+    height: 200px;
+    background-color: #2e130d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    left: 10px;
+    top: 30px;
+    position: absolute;
+}
+.logo img{
+    height: 85px;
+    width: 250px;
+}
+.header h1{
+    color: white;
+    font-size: 50px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Header secundária */
+.sub-header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #D9C6BF;
+    align-items: center;
+    justify-content: center;
+}
+.sub-header li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.sub-header a{
+    color: #592F25;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "Mozilla Headline", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-shadow: inset #592F25;
+    margin: 0;
+    padding: 0 4px;
+    transition: color .0s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 5px;
+}
+.sub-header a:hover {
+    border-radius: 5px;
+    box-shadow: inset 162px 0 0 0 #592F25;
+    color: white;
+}
+/* Venda dos produtos */
+#container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+hr{width: 100%; border: 1px solid rgba(0, 0, 0, 0.5);}
+/* Pesquisa e carrinho */
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    width: 100%;
+}
+form input{
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+/* Instrumentos */
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.instrumento{
+    width: 300px;
+    height: 420px;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.instrumento img{
+    width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.instrumento h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+    font-family: "Baskervville", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.instrumento p{
+    font-size: 20px;
+    margin: 6px 0;
+    text-align: left;
+}
+.instrumento span {font-weight: bold;}
+.preco{color: green; font-weight: bold;}
+.comprar{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #592F25;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.comprar a {color: white; text-decoration: none;}
+.comprar a:hover{font-weight: bold;}
+/* Footer */
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 100px;
+    display: flex;
+    color: white;
+}
+.footer img{
+    height: 85px;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.vendas{
+    margin-left: 200px;
+    width: 350px;
+}
+.vendas h3{
+    font-size: 30px;
+    font-family: "Baskervville", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.vendas li{list-style: none; font-size: 20px;}
+.vendas a{
+    text-decoration: none;
+    color: white;
+    line-height: 1.8;
+}
+.vendas a:hover{font-weight: bold;}
+.pags{margin-left: 150px;}
+.pags h3{
+    font-size: 30px;
+    font-family: "Baskervville", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.pags a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.8;
+}
+.pags a:hover{font-weight: bold;}

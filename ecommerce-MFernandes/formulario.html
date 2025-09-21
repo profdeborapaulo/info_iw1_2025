@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="formulário para realizar a compra do instrumento">
+    <meta name="author" content="Miguel Fernandes Silva">
+    <meta name="keyowords" content="música, instrumentos, compras">
+    <link rel="icon" type="image/x-icon" href="/Imagens/Logotipo Branco.png">
+    <title> Instrumania | Comprar </title>
+    <style>
+        /* Fontes utilizadas */ 
+        @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&family=Satisfy&display=swap');
+        body{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            scroll-behavior: smooth;
+        }
+        /* Header */
+        .header{
+            width: 100%;
+            height: 200px;
+            background-color: #2e130d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo{
+            left: 10px;
+            top: 30px;
+            position: absolute;
+        }
+        .logo img{
+            height: 85px;
+            width: 250px;
+        }
+        .header h1{
+            color: white;
+            font-size: 50px;
+            font-family: "Satisfy", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        /* Header secundária */
+        .sub-header{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            background-color: #D9C6BF;
+            align-items: center;
+            justify-content: center;
+        }
+        .sub-header li{
+            list-style: none;
+            display: inline-block;
+            margin: 20px;
+        }
+        .sub-header a{
+            color: #592F25;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: "Mozilla Headline", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            box-shadow: inset #592F25;
+            margin: 0;
+            padding: 0 4px;
+            transition: color .0s ease-in-out, box-shadow .3s ease-in-out;
+            border-radius: 5px;
+        }
+        .sub-header a:hover {
+            border-radius: 5px;
+            box-shadow: inset 162px 0 0 0 #592F25;
+            color: white;
+        }
+        #container{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 100px;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-top: 5%;
+            padding: 1%;
+            background-color: rgb(245, 241, 237);
+        }
+        /* Títulos */
+        h2{
+            text-align: center;
+            font-size: 40px;
+            font-family: "Mozilla Headline", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            box-shadow: inset #592F25;
+        }
+        p{
+            text-align: center;
+            font-size: 25px;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+        /* Perguntas de compras */
+        label{
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 20px;
+        }
+        .buy{
+            border: 1px solid rgb(0, 0, 0, 0.3);
+            border-radius: 10px;
+            width: 100%;
+            height: 40px;
+            background-color: transparent;
+            font: 40px;
+            padding-left: 10px;
+            box-shadow: inset black;
+        }
+        span{color: rgb(194, 0, 0);}
+        hr{border: 1px dashed black;}
+        /* Pagamento */
+        #pagamento{
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            width: 200px;
+            margin-left: 1%;
+        }
+        #pagamento option:hover{background-color: #D9C6BF;}
+        /* Parcelas */
+        .pergunta{
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 20px;
+        }
+        .parcela{
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: thin;
+            font-style: normal;
+            font-size: 20px;
+        }
+        .juros{color: rgb(110, 110, 110)}
+        /* Conclusão de pagamento */
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        option{
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 20px;
+        }
+        button{
+            height: 50px;
+            width: 200px;
+            border: none;
+            border-radius: 10px;
+            background-color: #4e1e02;
+            color: white;
+        }
+        button:hover{background-color: #250f0c;}
+        button a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: "Mozilla Headline", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: bold;
+        }
+        </style>
+</head>
+<body>
+    <header>
+            <div class="header">
+                <div class="logo"><a href="index.html" target="_self"><img src="/Imagens/Logo branca.png" class="logo"></a></div>
+                <h1 class="title"> Realizar Compra </h1>
+            </div>
+        <nav>
+            <div class="sub-header">
+                <ul>
+                    <li><a href="index.html" target="_self"> Início </a></li>
+                    <li><a href="sobre_nos.html" target="_self"> Sobre nós </a></li>
+                    <li><a href="contatos.html" target="_self"> Contatos </a></li>
+                    <li><a href="musica.html" target="_self"> Aprenda música </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="container">
+        <h2> Realizar Compra </h2>
+        <p> Responda esse formulário para realizar a compra </p>
+        <br> <br>
+        <form>
+            <label for="nome"> Insira seu nome: <span>*</span></label> <br> <br>
+            <input class="buy" type="text" name="nome" id="nome" placeholder="exp: João Antônio Barros">
+            <br> <br>
+            <label for="cpf"> Insira seu CPF: <span>*</span></label> <br> <br>
+            <input class="buy" type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
+            <br> <br>
+            <label for="adress"> Insira seu endereço: <span>*</span></label> <br> <br>
+            <input class="buy" type="text" name="adress" id="adress" placeholder="exp: rua xxx, bairro xxx, nº - cidade, estado">
+            <br> <br>
+            <label for="produto"> Informe instrumento que você deseja comprar: <span>*</span></label> <br> <br>
+            <input class="buy" type="text" name="produto" id="produto" placeholder="exp: Piano">
+            <br> <br>
+            <label for="marca"> Informe a marca do instrumento desejado: <span>*</span></label> <br> <br>
+            <input  class="buy" type="text" name="marca" id="marca" placeholder="exp: Yamaha">
+            <br> <br>
+            <label for="modelo"> Informe o modelo do instrumento desejado: <span>*</span></label> <br> <br>
+            <input class="buy" type="text" name="modelo" id="modelo">
+            <br> <br> <hr> <br>
+            <label for="pagamento"> Selecione a forma de pagamento: <span>*</span></label>
+            <select name="pagamento" id="pagamento">
+                <option value="Paypal"> Paypal </option>
+                <option value="Visa"> Visa </option>
+                <option value="Mastercard"> Mastercard </option>
+                <option value="Pix"> Pix </option>
+                <option value="Pagseguro"> Pagseguro </option>
+                <option value="Hipercard"> Hipercard </option>
+            </select>
+            <br> <br>
+            <label for="parcela" class="pergunta1"> Deseja parcelar o produto em quantas vezes (<span class=juros> sem juros </span>)? 
+            <span>*</span></label> <br> <br>
+            <input type="radio" id="1x" name="parcela" value="1x">
+            <label for="parcela" class="parcela"> 1x </label>
+            <input type="radio" id="2x" name="parcela" value="2x">
+            <label for="parcela" class="parcela"> 2x </label>
+            <input type="radio" id="6x" name="parcela" value="6x">
+            <label for="parcela" class="parcela"> 6x </label>
+            <input type="radio" id="12x" name="parcela" value="12x">
+            <label for="parcela" class="parcela"> 12x </label>
+            <input type="radio" id="24x" name="parcela" value="24x">
+            <label for="parcela" class="parcela"> 24x </label>
+            <input type="radio" id="36x" name="parcela" value="36x">
+            <label for="parcela" class="parcela"> 36x </label>
+            <input type="radio" id="48x" name="parcela" value="48x">
+            <label for="parcela" class="parcela"> 48x </label>
+        </form>
+        <br> <br>
+        <div class="button">
+            <button id="finalizar_compra"><a href="index.html"> Comprar </a></button>
+        </div>
+    </div>
+</body>
+</html>
