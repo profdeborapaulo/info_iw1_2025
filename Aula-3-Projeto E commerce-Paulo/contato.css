@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #faf9f3f2;  
+  }
+
+  header {
+    background-color: #eb7323;
+    width: auto;
+    height: 120px; 
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.372);
+  }
+
+  
+  .logo img {
+    height: 170px;
+  }
+
+  
+  nav {
+    margin: 0 auto; 
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li a {
+    background-color: #f8f8f8f2;   
+    color: #eb7323;           
+    padding: 10px 20px;       
+    border-radius: 8px;       
+    text-decoration: none;    
+    font-weight: bold;        
+    transition: all 0.3s;     
+    font-size: 19px;
+}
+
+nav ul li a:hover {
+    background-color: #FFD9B3; 
+    color: #FF6600;
+}
+
+h1{
+  text-align: center;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 40px;
+  margin: auto;
+  margin-top: 50px;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.299);
+  text-align: center;
+}
+
+.texto{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 70%;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.372);
+}
+p{
+  color: #000000;
+  font-size: 25px;
+  margin: 0px 10px;
+  font-style: oblique;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
+  margin-top: 60px; 
+}
+
+.whats{
+  width: 200px;
+  height: 300px;
+  text-align: center;
+}
+.logow{
+  width: 100%;
+  height: 80%;  
+}
+.whats p{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.859);
+}
+.telefone{
+  width: 200px;
+  height: 300px;
+  text-align: center;
+}
+.logot{
+  width: 100%;
+  height: 80%;
+}
+.telefone p{
+  font-size: 20px;
+  color:  rgba(0, 0, 0, 0.859);
+}
+.insta{
+   width: 220px;
+  height: 300px;
+  text-align: center;
+}
+.logoi{
+  width: 100%;
+  height: 80%; 
+}
+.insta p{
+  font-size: 20px;
+  color:  rgba(0, 0, 0, 0.859);
+}
+
+
+
+
+
+
+footer{
+  background-color: #eb7323;
+  width:100%;
+    height: 100%; 
+    display: flex;
+    position: relative;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.372);
+    margin-top: 70px;
+}
+footer h3{
+  margin-left: 20px;
+  color: #ffffff;
+}
