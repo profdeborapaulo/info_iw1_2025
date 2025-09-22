@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Formulário | Esmola</title>
+    <link rel="shortcut icon" href="img/icones/E.png" type="image/x-icon">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+<!--Estrutura de navegação-->
+    <header>
+        <nav>
+          <a href="index.html"><img class="imagem-c" src="img/icones/transferir.png" alt="logo"></a>
+            <a href="sobrenos.html"><img class="icones" src="img/icones/2754.png" alt="sobre nós"><span>SOBRE NÓS</span></a>
+             <a href="https://www.instagram.com/pedupontez/"><img class="icones-redesoc" src="img/icones/Instagram_logo.png" alt="instagram"></a>
+              <a href="https://x.com/PBrawlzero"><img class="icones-redesoc" src="img/icones/X_logo_2023_(white).png" alt="X"></a>
+               <a href="https://www.youtube.com/@pedropontes7995" class="youtube"><img class="icones-ytb" src="img/icones/youtube.png" alt="Youtube"></a>
+             <a href="#carrinho.html" class="carrinho"><img class="icones" src="img/icones/5381441.png" alt="Carrinho"><span>Carrinho </span></a>
+        </nav>
+         <section class="banner">
+           <div class="banner-image">
+            <div class="bannerelemento">
+              <p>ESMOLA FILMES - O melhor site para comprar filmes baratos!</p>
+            </div>
+           </div>
+        
+       </section>
+<!--Formulário-->
+<main class="conteudo">
+  <h1><u>Formulário de Compra</u></h1><br>
+
+  <form>
+    <p>
+      <label>Produto:<br>
+        <input type="text" name="produto" value="Filme" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Quantidade:<br>
+        <input type="number" name="quantidade" min="1" value="0" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Nome:<br>
+        <input type="text" name="nome" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Email:<br>
+        <input type="email" name="email" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Endereço:<br>
+        <input type="text" name="endereco" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Forma de pagamento:<br>
+        <select name="pagamento" required>
+          <option value="cartao">Cartão</option>
+          <option value="pix">Pix</option>
+          <option value="boleto">Boleto</option>
+        </select>
+      </label>
+    </p>
+
+    <p>
+      <button type="submit">Finalizar Compra</button>
+    </p>
+  </form>
+</main>
+
+          <footer>
+      <p>Todos os direitos reservados por Pedro Pontes 1ºInfo</p>
+    </footer>
+</body>
+</html>

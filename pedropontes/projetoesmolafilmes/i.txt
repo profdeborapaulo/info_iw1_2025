@@ -1,0 +1,135 @@
+ /*Espaço para navegação entre categorias entre outros*/
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000000;
+    height: 100px;
+    padding: 0 20px;
+  }
+  header a {
+  text-decoration: underline;
+  }
+
+  header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+img.imagem-c{
+    position: relative;
+    left: 5px;
+    width: 200px;
+    height: 100px;
+    padding-left: 25px;
+  
+}
+img.icones{
+  display: flexbox flex;
+  height: 30px;
+  width: 30px;
+}
+img.icones-redesoc{
+  height: 28px;
+  width: 28px;
+  display: flex;
+}
+.youtube {
+  display: flex;
+  background-color: white;
+  height: 34px;
+  width: 37px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+img.icones-ytb{
+  height: 40px;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  right: 10px;
+}
+.carrinho {
+  display: flex;
+  flex: none;
+  padding: 5px;
+  position: absolute;
+  right: 20px;
+  background-color: #373737;
+  width: 110px;
+  height: 50px;
+  border-radius: 10px;
+}
+  nav a {
+    display: inline-flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  gap: 5px; /* espaço entre ícone e texto */
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+
+
+
+
+
+
+
+
+    <a href="index.html"><img class="imagem-c" src="img/icones/transferir.png" alt="logo"></a>
+            <a href="#sobrenos.html"><img class="icones" src="img/icones/2754.png" alt="sobre nós"><span>SOBRE NÓS</span></a>
+             <a href="img/icones/Instagram_logo.png"><img class="icones-redesoc" src="img/icones/Instagram_logo.png" alt="instagram"></a>
+              <a href="img/icones/X_logo_2023_(white).png"><img class="icones-redesoc" src="img/icones/X_logo_2023_(white).png" alt="X"></a>
+               <a href="img/icones/youtube-logo-0.png" class="youtube"><img class="icones-ytb" src="img/icones/youtube.png" alt="Youtube"></a>
+
+
+
+
+               *Teste de menu para outro trqabalho*
+                 ul {
+    list-style: none;
+    background: #000000;
+  }
+  ul li {
+    display: inline-block;
+    position: relative;
+  }
+  ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px ;
+    text-align: center;
+  }
+  ul li ul.dropdown li{
+display: block;
+  }
+  ul li ul .dropdown {
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    display: none;
+    background: #000000;
+  
+  }
+  ul li a :hover{
+    background: #000000;
+  }
+  ul li hover ul.dropdown{
+    display: block;
+  }

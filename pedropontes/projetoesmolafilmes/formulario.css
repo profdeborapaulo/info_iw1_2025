@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    
+    font-family: Arial;
+    background-color: #570001;
+    scroll-behavior: smooth;
+    justify-content: center;
+  }
+ 
+  /*Espaço para navegação entre categorias entre outros*/
+  header {
+    position: sticky;
+    top: auto;
+    align-items: center;
+    justify-content: space-between;
+    background: #000000;
+    height: 100px;
+    padding: 0px;
+   
+  }
+  header a {
+  text-decoration: underline;
+  }
+
+  header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    
+  }
+
+img.imagem-c{
+    position: relative;
+    left: 5px;
+    width: 200px;
+    height: 100px;
+    padding-left: 25px;
+  
+}
+img.icones{
+  display: flexbox flex;
+  height: 30px;
+  width: 30px;
+}
+img.icones-redesoc{
+  height: 28px;
+  width: 28px;
+  display: flex;
+}
+.youtube {
+  display: flex;
+  background-color: white;
+  height: 34px;
+  width: 37px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+img.icones-ytb{
+  height: 40px;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  right: 10px;
+}
+.carrinho {
+  display: flex;
+  flex: none;
+  padding: 5px;
+  position: absolute;
+  right: 20px;
+  background-color: #373737;
+  width: 110px;
+  height: 50px;
+  border-radius: 10px;
+}
+  nav a {
+    display: inline-flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  gap: 5px; /* espaço entre ícone e texto */
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+.banner{
+    padding: 0;
+    background-color: #360001;
+    
+}
+  
+ .banner-image{
+  /*Banner genérico*/
+  margin-top: 0;
+   display: flex;
+   justify-content: center;
+   background-image: url(img/1317ba3fb0901d7b6be59f9c21d39d12.jpg);
+   background-size: cover;
+   background-position: center;
+    width: calc(100% -80px);
+    margin: 0 40px;
+   height: 250px;
+   border-radius: 30px;
+   align-content: center;
+   align-items: center;
+   background-size: cover;
+   
+ }
+ .bannerelemento{
+  /*Slogan*/
+  
+  font-weight: bold;
+  color: white;
+  background-color: #0000008b;
+  text-align: center;
+  align-content: center;
+  height: 100px;
+  width: 400px;
+  border-radius: 5px;
+  
+ }
+
+.conteudo {
+  flex-direction: column;
+  padding: 10px;
+  display: flex;
+  margin: 50px auto;
+  align-items: center;
+  border-radius: 10px;
+  width: 700px;
+  background-color: azure;
+  height: 700px;
+  box-shadow: #000000;
+}
+form {
+  font-family:  Helvetica, sans-serif;
+  width: 100%;
+  max-width: 400px;
+  font-size: 25px;
+  line-height: 1.5;
+}
+input{
+  height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ footer {
+ 
+  background-color: #000000;
+  height: 80px;
+  font-size: smaller;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.766);
+  text-align: center;
+  padding-top: 40px;
+ }
