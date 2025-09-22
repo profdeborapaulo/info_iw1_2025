@@ -1,0 +1,125 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: #F1F2D5
+}
+header {
+        background: #860707;
+        color: #ffffff;
+        height: 100px;
+        text-align: center;
+        padding: 15px;
+        background: linear-gradient(180deg, #A66844, #593622);
+        box-shadow: 0 2px 10px #593622;
+      
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 90px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 40px auto;
+  border-radius: 15px;
+  max-width: 1000px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0 10px 15px;
+}
+
+.buy {
+  background: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.buy:hover {
+  background: #218838;
+}
+
+.back-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.back {
+  background: #360a0a;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.back:hover {
+  background: #a76324;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+button{
+  background-color: #a33400;
+  color: white;
+  padding: 10px;
+  border: none;
+
+}
+
+.pagamento{
+  padding: 40px;
+  max-width: 60%;
+  margin: auto;
+}

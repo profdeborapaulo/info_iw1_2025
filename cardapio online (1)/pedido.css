@@ -1,0 +1,120 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: #F1F2D5
+}
+header {
+        background: #860707;
+        color: #ffffff;
+        height: 100px;
+        text-align: center;
+        padding: 15px;
+        background: linear-gradient(180deg, #A66844, #593622);
+        box-shadow: 0 2px 10px #593622;
+      
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+button{
+  background-color: #b85900;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  transition: 0.3s;
+
+}
+
+button:hover {
+    background: #a76324;
+}
+
+.pagamento{
+  padding: 40px;
+  max-width: 60%;
+  margin: auto;
+}
+
+.banner{
+    position: relative;
+    text-align: center;
+}
+
+.bannerimg{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: url('benner.jpg');
+    height: 580px;
+    border: solid black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    width: fit-content;
+    margin: auto;
+}
+
+.container label {
+  font-size: 1.0rem;
+  margin: 0;
+  text-align: center;
+    color: white;
+}
+
+a {
+    color: rgb(255, 254, 254);
+    font-size: 15px;
+    text-decoration: none;
+}
+nav a:hover {
+text-decoration: underline;
+color: #ffffff;
+}
+
+.back-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.back {
+  background: #b85900;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.back:hover {
+  background: #a76324;
+}
